@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'palevanilla':
                 return 'linear-gradient(to right, hsl(48, 75%, 81%), 50%, white 50%)';
             case 'sunset':
-                return 'linear-gradient(to right, hsl(10, 81%, 83%) 0%, hsl(10, 81%, 83%) 50%, white 50%, white 100%)';
+                return 'linear-gradient(to right, #FF9A8A 50%, white 50%, white 100%)';
             case 'desert':
                 return 'linear-gradient(to right, black 50%, sandybrown 50%)';
             case 'jadesmoke':
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             case 'latte':
                 return 'linear-gradient(to right, #C4A484 50%, white 50%)';
             case 'sunrise':
-                return 'linear-gradient(to right, #A52A2A 50%, white 50%)';
+                return 'linear-gradient(to right, #FFA500 0%, #FFD700 50%, white 50%, white 100%)';
             case 'bluesea':
                 return 'linear-gradient(to right, purple 50%, white 50%)';
             case 'cyanite':
