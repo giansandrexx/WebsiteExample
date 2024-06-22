@@ -1,0 +1,249 @@
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #6a11cb, #c800ff); 
+    color: #fff; 
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    background-color: transparent; 
+    padding: 30px 230px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 200px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    top: 60px;
+    left: 700; 
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1) ;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button.hovered {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: #000;
+    font-weight: 700;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.aj1-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.aj1-main {
+    display: block;
+    font-size: 6em;
+    font-weight: 700;
+    font-style: italic;
+    position: absolute;
+    top: 160px; 
+    left: 220px; 
+}
+
+.aj1-sub {
+    display: block;
+    font-size: 3em;
+    font-weight: 400;
+    font-style: italic;
+    position: absolute; 
+    top: 270px; 
+    left: 220px; 
+}
+
+.about {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    position: absolute; 
+    top: 360px; 
+    left: 220px; 
+}
+
+.shoes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 10px;
+    left: 800px;
+    width: 500px; 
+    height: auto;
+    transform: rotate(-25deg);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.zoom-out {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.zoom-in {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: -670px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.next-button {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff; 
+    padding: 10px 10px;
+    border-radius: 10px;
+    position: fixed; 
+    top: 330px; 
+    right: 90px; 
+    background: none;
+    border: none; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #fff;
+    color: #000; 
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.next-button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.footer-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff; 
+}
+
+.toggle-container {
+    position: fixed; 
+    top: 480px;
+    left: 220px; 
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+}
+
+.round-toggle {
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.422);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.round-toggle.fade-out {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.round-toggle.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.round-toggle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.round-toggle:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+backgroundColorFade {
+    from { background-color: var(--previous-bg-color); }
+    to { background-color: var(--new-bg-color); }
+}
+
+body.fade-background {
+    animation: backgroundColorFade 0.5s forwards;
+}
+
+
