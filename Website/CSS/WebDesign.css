@@ -135,6 +135,7 @@ nav ul li a:hover {
     height: auto;
     transform: rotate(-25deg);
     transition: transform 0.5s ease, opacity 0.5s ease;
+    
 }
 
 .zoom-out {
